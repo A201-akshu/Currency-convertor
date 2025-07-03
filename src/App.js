@@ -18,6 +18,7 @@ function App() {
       .then(data => setExchangeRate(data.rates))
       .catch(error => console.error("Error fetching exchange rates:", error));
   }, [fromCurrency]);
+  
 
   useEffect(() => {
     inputRef.current.focus();
